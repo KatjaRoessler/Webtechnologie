@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rotating Cube</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body onload="init()">
+
+  <br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div class="start">
+    <div class="face face-cover"></div>
+    <div class="face face-spine"></div>
+    <div class="face face-back"></div>
+    <div class="face face-top"></div>
+    <div class="face face-side"></div>
+    <div class="face face-bottom"></div>
+  </div>
+  <div class="doma">
+    <div class="face face-cover-doma"></div>
+    <div class="face face-spine-doma"></div>
+    <div class="face face-back-doma"></div>
+    <div class="face face-top-doma"></div>
+    <div class="face face-side-doma"></div>
+    <div class="face face-bottom-doma"></div>
+  </div>
+
+  <div class="house">
+    <div class="face face-cover-house"></div>
+    <div class="face face-spine-house"></div>
+    <div class="face face-back-house"></div>
+    <div class="face face-top-house"></div>
+    <div class="face face-side-house"></div>
+    <div class="face face-bottom-house"></div>
+  </div>
+
+  <div class="chill">
+    <div class="face face-cover-chill"></div>
+    <div class="face face-spine-chill"></div>
+    <div class="face face-back-chill"></div>
+    <div class="face face-top-chill"></div>
+    <div class="face face-side-chill"></div>
+    <div class="face face-bottom-chill"></div>
+  </div>
+
+
+  <div class="intro">
+    <div class="wrapper-text">
+      <button>Record Selector</button>
+      </br></br></br></br></br>
+      <p>Tap the record </br>
+        you want to listen to.</p>
+    </div>
+
+
+  </div>
+
+
+  <div class="container">
+    <img src="images/face-cover-chill.jpg">
+    <div class="d-table-cell tar w-10 btn">
+      <audio id="player1" src="assets/Handout.mp3" type="audio/mpeg"></audio>
+      <a id="toggle-button1"><i id="icons1" class="fa  fa-play fa-2x"></i></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="images/face-cover-doma.jpg">
+    <div class="d-table-cell tar w-10 btn">
+      <audio id="player2" src="assets/Night.mp3" type="audio/mpeg"></audio>
+      <a id="toggle-button2"><i id="icons2" class="fa  fa-play fa-2x"></i></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="images/face-cover-house.jpg">
+    <div class="d-table-cell tar w-10 btn">
+      <audio id="player3" src="assets/Neverest.mp3" type="audio/mpeg"></audio>
+      <a id="toggle-button3"><i id="icons3" class="fa  fa-play fa-2x"></i></a>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

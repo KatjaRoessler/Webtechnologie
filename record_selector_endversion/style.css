@@ -1,0 +1,371 @@
+body {
+  background-color: #ff4141;
+  perspective: 1500px;
+  /* bedeuted Camera ist 1500 px entfernt */
+  height: 100vh;
+  font-size: 60px;
+  line-height: 0.8;
+  color: #6c757d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #ffffff;
+}
+
+p {
+  font-size: 25px;
+  line-height: normal;
+  color: #ffffff;
+}
+
+button {
+  position: absolute;
+  top: 15%;
+  left: 22%;
+  height: 250px;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+}
+
+.d-table {
+  display: table !important;
+  z-index: 500px;
+}
+
+.d-table-cell {
+  display: table-cell !important;
+  font-size: 25px;
+  color: white;
+  z-index: 500px;
+}
+
+.w-100 {
+  width: 5% !important;
+  z-index: 500px;
+}
+
+.tar {
+  text-align: left !important;
+}
+
+.player1 {
+  src: url("assets/Handout.mp3");
+}
+
+.player2 {
+  src: url("assets/Night.mp3");
+}
+
+.player3 {
+  src: url("assets/Neverest.mp3");
+}
+
+.intro {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  padding-left: 5px;
+}
+
+.wrapper-text {
+  width: 30%;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-left: 3%;
+}
+
+.container {
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  position: relative;
+  left: 0;
+  bottom: 350px;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.container img {
+  border-radius: 2px;
+  width: 250px;
+  height: 250px;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+.img {
+  size: 100%;
+  border-radius: 2px;
+  width: 250px;
+  height: 250px;
+}
+
+div.start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+div.chill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+div.doma {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+div.house {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+div.face {
+  position: absolute;
+  background-size: cover;
+}
+
+div.face-cover {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/face-cover.jpg");
+  transform: translateX(-50%) translateY(-50%) translateZ(5px);
+}
+
+div.face-spine {
+  width: 10px;
+  height: 250px;
+  background-image: url("images/face-spine.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(125px);
+}
+
+div.face-back {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/face-back.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(5px);
+}
+
+div.face-top {
+  width: 250px;
+  height: 10px;
+  background-image: url("images/face-top.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(125px);
+}
+
+div.face-side {
+  width: 10px;
+  height: 250px;
+  background-image: url("images/face-side.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(125px);
+}
+
+div.face-bottom {
+  width: 250px;
+  height: 10px;
+  background-image: url("images/face-bottom.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(125px);
+}
+
+div.face-cover-doma {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/face-cover-doma.jpg");
+  transform: translateX(-50%) translateY(-50%) translateZ(5px);
+}
+
+div.face-spine-doma {
+  width: 10px;
+  height: 250px;
+  background-image: url("images/face-spine-doma.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(125px);
+}
+
+div.face-back-doma {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/face-back-doma.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(5px);
+}
+
+div.face-top-doma {
+  width: 250px;
+  height: 10px;
+  background-image: url("images/face-top-doma.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(125px);
+}
+
+div.face-side-doma {
+  width: 10px;
+  height: 250px;
+  background-image: url("images/face-side-doma.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(125px);
+}
+
+div.face-bottom-doma {
+  width: 250px;
+  height: 10px;
+  background-image: url("images/face-bottom-doma.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(125px);
+}
+
+div.face-cover-chill {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/face-cover-chill.jpg");
+  transform: translateX(-50%) translateY(-50%) translateZ(5px);
+}
+
+div.face-spine-chill {
+  width: 10px;
+  height: 250px;
+  background-image: url("images/face-spine-chill.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(125px);
+}
+
+div.face-back-chill {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/face-back-chill.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(5px);
+}
+
+div.face-top-chill {
+  width: 250px;
+  height: 10px;
+  background-image: url("images/face-top-doma.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(125px);
+}
+
+div.face-side-chill {
+  width: 10px;
+  height: 250px;
+  background-image: url("images/face-side-doma.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(125px);
+}
+
+div.face-bottom-chill {
+  width: 250px;
+  height: 10px;
+  background-image: url("images/face-bottom-chill.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(125px);
+}
+
+div.face-cover-house {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/face-cover-house.jpg");
+  transform: translateX(-50%) translateY(-50%) translateZ(5px);
+}
+
+div.face-spine-house {
+  width: 10px;
+  height: 250px;
+  background-image: url("images/face-spine-house.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(125px);
+}
+
+div.face-back-house {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/face-back-house.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(5px);
+}
+
+div.face-top-house {
+  width: 250px;
+  height: 10px;
+  background-image: url("images/face-top-house.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(125px);
+}
+
+div.face-side-house {
+  width: 10px;
+  height: 250px;
+  background-image: url("images/face-side-house.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(125px);
+}
+
+div.face-bottom-house {
+  width: 250px;
+  height: 10px;
+  background-image: url("images/face-bottom-house.jpg");
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(125px);
+}
+
+div.inputs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  padding: 0px;
+}
+
+.music {
+  display: inline-flex;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  padding-left: 15px;
+  text-align: left;
+  height: 150px !important;
+  overflow: hidden;
+  background-color: "red";
+}
